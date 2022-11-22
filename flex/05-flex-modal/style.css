@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -19,7 +20,7 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -63,4 +64,62 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* My changes - This was as close as I got on my first attempt */
+
+/* 
+
+.modal {
+  padding: 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.text,
+button.continue {
+  margin-left: 72px;
+}
+
+.text {
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+
+*/
+
+/* Second attempt after consulting the solution */
+
+.modal {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 120%;
+  font-weight: bold;
+  align-items: center;
+}
+
+.text {
+  margin: 10px 0;
 }
